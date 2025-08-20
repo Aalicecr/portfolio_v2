@@ -296,16 +296,30 @@ left: 70px;
   padding: 20px 28px; /* Spazi interni */
   margin-top: -50px; /* Spazio sopra il contenitore */
   line-height: 1.7; /* Migliora la leggibilità */
+  position: relative; /* Posizione relativa per il posizionamento */
+  left: 10px; /* Posiziona il testo a sinistra */
+  
 }
 
 .intro-text {
   font-size: 24px; /* Dimensione del testo più grande */
-  font-weight: semi-bold; /* Testo in grassetto */
-  margin-bottom: 20px; /* Spazio sotto il testo */
+  font-weight: normal; /* Testo normale */
+  margin-bottom: 25px; /* Spazio sotto il testo */
   color: black; /* Colore del testo */
   text-align: left; /* Allineamento a sinistra */
   
   }
+
+.hello-text {
+  position: absolute;
+  top: 60px; /* Posiziona il testo in alto */
+  left: 40px; /* Posiziona il testo a sinistra */
+  font-size: 100px; /* Dimensione del testo */
+  font-weight: bold; /* Testo in grassetto */
+  letter-spacing: 3px; /* Spaziatura tra le lettere */
+  color: black; /* Colore del testo */
+  text-align: left; /* Allineamento a sinistra */
+}
 
 
 
