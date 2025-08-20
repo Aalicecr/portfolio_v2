@@ -28,11 +28,12 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  padding: 20px 50px;
+  padding: 20px 50px; /* Aggiungi padding per contenere gli elementi */
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between; /* Posiziona il logo e il menu ai lati */
   align-items: center;
   z-index: 10;
+  overflow: hidden; /* Evita che gli elementi escano dalla pagina */
 }
 
 .logo {
@@ -62,11 +63,23 @@ nav a {
 
 .side-text {
   position: absolute;
-  left: 50px;
-  top: 50%;
-  transform: translateY(-50%);
-  font-size: 18px;
-  line-height: 2;
+  top: 20px; /* Posiziona il menu sulla stessa linea di AP */
+  right: 150px; /* Allinea il menu a destra */
+  display: flex; /* Allinea gli elementi orizzontalmente */
+  gap: 30px; /* Spaziatura tra le parole */
+  font-size: 14px; /* Uniforma la dimensione del testo */
+  letter-spacing: 1px; /* Spaziatura tra le lettere */
+  text-align: right; /* Allinea il testo a destra */
+  color: white;
+  max-width: calc(100% - 100px); /* Limita la larghezza per evitare overflow */
+  overflow: hidden; /* Nasconde eventuali elementi che escono */
+  flex-wrap: wrap; /* Se necessario, manda gli elementi a capo */
+}
+
+.side-text a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
   letter-spacing: 2px;
 }
 
@@ -75,7 +88,7 @@ nav a {
   bottom: 55px;
   right: 30px;
   transform: none;
-  font-size: 80px;
+  font-size: 50px;
   font-weight: normal;
   letter-spacing: 2px;
   text-align: right;
