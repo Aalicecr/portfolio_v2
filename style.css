@@ -292,4 +292,17 @@ left: 70px;
   text-align: right;
 }
 
+.image-container {
+  position: absolute;
+  top: 50px; /* Posiziona l'immagine in alto */
+  left: 20px; /* Posiziona l'immagine a sinistra */
+  z-index: 100; /* Assicura che sia visibile sopra altri elementi */
+}
+
+.top-left-image {
+  width: 200px; /* Larghezza dell'immagine */
+  height: auto; /* Mantieni le proporzioni */
+  border-radius: 2px; /* Arrotonda gli angoli dell'immagine */
+}
+
 
