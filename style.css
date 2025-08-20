@@ -28,19 +28,20 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  padding: 20px 50px; /* Aggiungi padding per contenere gli elementi */
+  padding: 20px 50px;
   display: flex;
-  justify-content: space-between; /* Posiziona il logo e il menu ai lati */
+  justify-content: space-between;
   align-items: center;
   z-index: 10;
-  overflow: hidden; /* Evita che gli elementi escano dalla pagina */
 }
 
 .logo {
   font-weight: normal;
-
+position: absolute;
+  top: 30px; /* Posiziona il logo sulla stessa linea del menu */
   font-size: 14px;
   letter-spacing: 2px;
+  z-index: 100;
 }
 
 nav a {
@@ -63,17 +64,16 @@ nav a {
 
 .side-text {
   position: absolute;
-  top: 20px; /* Posiziona il menu sulla stessa linea di AP */
-  right: 150px; /* Allinea il menu a destra */
-  display: flex; /* Allinea gli elementi orizzontalmente */
-  gap: 30px; /* Spaziatura tra le parole */
-  font-size: 14px; /* Uniforma la dimensione del testo */
-  letter-spacing: 1px; /* Spaziatura tra le lettere */
-  text-align: right; /* Allinea il testo a destra */
+  top: 30px;
+  right: 150px;
+  display: flex;
+  gap: 30px;
+  font-size: 14px;
+  letter-spacing: 1px;
+  text-align: right;
   color: white;
-  max-width: calc(100% - 100px); /* Limita la larghezza per evitare overflow */
-  overflow: hidden; /* Nasconde eventuali elementi che escono */
-  flex-wrap: wrap; /* Se necessario, manda gli elementi a capo */
+  max-width: calc(100% - 100px);
+  z-index: 100;
 }
 
 .side-text a {
@@ -107,6 +107,28 @@ nav a {
   color: white;
   padding: 10px 20px;
   border-radius: 8px;
+}
+.just-creativity {
+  font-size: 90px; /* Dimensione del testo */
+  font-weight: normal;
+  letter-spacing: 2px;
+  color: white;
+}
+
+.welcome-nel {
+  font-size: 90px; /* Dimensione del testo */
+  font-weight: normal;
+  position: relative;
+left: 70px;
+  letter-spacing: 2px;
+  color: white;
+}
+
+.mio-portfolio {
+  font-size: 90px; /* Dimensione del testo */
+  font-weight: normal;
+  letter-spacing: 2px;
+  color: white;
 }
 
 .bottom-section {
