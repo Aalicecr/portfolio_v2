@@ -107,10 +107,7 @@ nav a {
   color: white;
   padding: 10px 20px;
   border-radius: 8px;
-  background-image: url('./sfondo.jpg'); /* Percorso dell'immagine */
-  background-size: cover; /* Adatta l'immagine al contenitore */
-  background-position: center; /* Centra l'immagine */
-  background-repeat: no-repeat; /* Evita la ripetizione */
+  
 }
 .just-creativity {
   font-size: 90px; /* Dimensione del testo */
@@ -137,12 +134,12 @@ left: 70px;
 
 .bottom-section {
   position: absolute;
-  top: 110vh;
+  top: 100vh; /* Posiziona la seconda pagina sotto la prima */
   left: 0;
   width: 100vw;
-  min-height: 70vh;
-  background: #000;
-  z-index: 1;
+  min-height: 115vh; /* Aumenta l'altezza della seconda pagina */
+  background: #000; /* Sfondo nero */
+  z-index: 2; /* Assicura che sia sopra la prima pagina */
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -252,3 +249,47 @@ left: 70px;
   color: white;
   transition: background 0.3s;
 }
+
+.empty-section {
+  position: absolute;
+  top: 215vh; /* Posiziona la pagina sotto la seconda pagina */
+  left: 0;
+  width: 100vw; /* Larghezza uguale alle altre pagine */
+  height: 100vh; /* Altezza uguale alle altre pagine */
+  background: white; /* Sfondo bianco */
+  z-index: 1; /* Assicura che la pagina sia visibile */
+}
+
+.first-section {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh; /* Limita lo sfondo alla prima pagina */
+  background: radial-gradient(
+      ellipse 60% 40% at 70% 30%,
+      #6a7cff 0%,
+      #2d1a4d 40%,
+      transparent 80%
+    ),
+    radial-gradient(ellipse 50% 30% at 30% 80%, #6a7cff 0%, transparent 70%),
+    radial-gradient(ellipse 80% 60% at 60% 70%, #6a7cff 0%, #111 100%);
+  background-color: #111;
+  background-position: 70% 30%, 30% 80%, 60% 70%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+
+.about-me-text {
+  position: absolute;
+  bottom: 20px; /* Posiziona il testo in basso */
+  right: 30px; /* Posiziona il testo a destra */
+  font-size: 100px; /* Dimensione del testo */
+  font-weight: bold;
+  letter-spacing: 3px; /* Spaziatura tra le lettere */
+  color: black; /* Colore del testo */
+  text-align: right;
+}
+
+
