@@ -294,8 +294,8 @@ left: 70px;
   color: black; /* Colore del testo */
   font-weight: normal; /* Peso del testo */
   padding: 20px 15px; /* Spazi interni */
-  margin-top: -10px; /* Spazio sopra il contenitore */
-  line-height: 1.7; /* Migliora la leggibilità */
+  margin-top: -30px; /* Spazio sopra il contenitore */
+  line-height: 1.3; /* Migliora la leggibilità */
   position: relative; /* Posizione relativa per il posizionamento */
   margin-left: -10px;
 
