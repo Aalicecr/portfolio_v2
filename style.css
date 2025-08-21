@@ -289,26 +289,20 @@ left: 70px;
 }
 
 .about-me-description {
-  max-width: 700px; /* Limita la larghezza del contenitore */
+  max-width: 500px; /* Limita la larghezza del contenitore */
   font-size: 16px; /* Dimensione del testo */
   color: black; /* Colore del testo */
   font-weight: normal; /* Peso del testo */
-  padding: 20px 28px; /* Spazi interni */
-  margin-top: -50px; /* Spazio sopra il contenitore */
+  padding: 20px 15px; /* Spazi interni */
+  margin-top: -10px; /* Spazio sopra il contenitore */
   line-height: 1.7; /* Migliora la leggibilità */
   position: relative; /* Posizione relativa per il posizionamento */
-  left: 10px; /* Posiziona il testo a sinistra */
+  margin-left: -10px;
+
   
 }
 
-.intro-text {
-  font-size: 24px; /* Dimensione del testo più grande */
-  font-weight: normal; /* Testo normale */
-  margin-bottom: 25px; /* Spazio sotto il testo */
-  color: black; /* Colore del testo */
-  text-align: left; /* Allineamento a sinistra */
-  
-  }
+
 
 .hello-text {
   position: absolute;
