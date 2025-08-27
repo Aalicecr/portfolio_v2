@@ -343,49 +343,30 @@ left: 70px;
   position: absolute;
   top: 315vh; /* Posiziona la nuova sezione sotto la terza pagina */
   left: 0;
-  width: 100vw; /* Larghezza uguale alle altre sezioni */
-  height: 100vh; /* Altezza uguale alle altre sezioni */
+  width: 100vw; /* Larghezza uguale alla finestra */
+  height: 150vh; /* Aumenta l'altezza della pagina */
   background: #000000; /* Sfondo nero */
   z-index: 1; /* Assicura che la sezione sia visibile */
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: flex; /* Usa Flexbox per centrare il contenuto */
+  align-items: center; /* Centra verticalmente la griglia */
+  justify-content: center; /* Centra orizzontalmente la griglia */
   overflow: hidden; /* Impedisce che il contenuto esca dalla sezione */
-}
-
-.new-section-title {
-  font-size: 50px; /* Dimensione del titolo */
-  font-weight: bold;
-  color: black; /* Colore del testo */
-  margin-bottom: 20px; /* Spazio sotto il titolo */
-}
-
-.new-section-content {
-  font-size: 18px; /* Dimensione del testo */
-  color: black; /* Colore del testo */
-  text-align: center; /* Allinea il testo al centro */
-  max-width: 800px; /* Limita la larghezza del contenuto */
-  line-height: 1.6; /* Migliora la leggibilità */
 }
 
 .photo-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 colonne di uguale larghezza */
-  grid-template-rows: repeat(3, 1fr); /* 3 righe di uguale altezza */
-  gap: 10px; /* Spaziatura uniforme tra le immagini */
-  width: 90%; /* La griglia occupa il 90% della larghezza della sezione */
-  height: 90%; /* La griglia occupa il 90% dell'altezza della sezione */
-  justify-items: center; /* Centra le immagini orizzontalmente */
-  align-items: center; /* Centra le immagini verticalmente */
+  grid-template-columns: repeat(4, 1fr); /* 4 colonne di uguale larghezza */
+  gap: 12px; /* Spaziatura uniforme tra le immagini */
+  width: calc(100% - 20px); /* La griglia occupa il 100% meno 20px per i margini */
+  margin: 10px auto; /* Centra la griglia orizzontalmente */
+  box-sizing: border-box; /* Include padding e bordi nella dimensione totale */
 }
 
 .photo-grid img {
   width: 100%; /* Le immagini occupano tutta la larghezza della cella */
-  height: 100%; /* Le immagini occupano tutta l'altezza della cella */
+  aspect-ratio: 1 / 1; /* Rende le celle quadrate */
   object-fit: cover; /* Adatta le immagini per riempire la cella senza deformarsi */
   border-radius: 8px; /* Arrotonda leggermente gli angoli */
-  
 }
-
 
 
