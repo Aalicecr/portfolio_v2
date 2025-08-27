@@ -339,5 +339,52 @@ left: 70px;
   text-align: left; /* Allineamento a sinistra */
 }
 
+.new-section {
+  position: absolute;
+  top: 315vh; /* Posiziona la nuova sezione sotto la terza pagina */
+  left: 0;
+  width: 100vw; /* Larghezza uguale alle altre sezioni */
+  height: 100vh; /* Altezza uguale alle altre sezioni */
+  background: #000000; 
+  z-index: 1; /* Assicura che la sezione sia visibile */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.new-section-title {
+  font-size: 50px; /* Dimensione del titolo */
+  font-weight: bold;
+  color: black; /* Colore del testo */
+  margin-bottom: 20px; /* Spazio sotto il titolo */
+}
+
+.new-section-content {
+  font-size: 18px; /* Dimensione del testo */
+  color: black; /* Colore del testo */
+  text-align: center; /* Allinea il testo al centro */
+  max-width: 800px; /* Limita la larghezza del contenuto */
+  line-height: 1.6; /* Migliora la leggibilità */
+}
+
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 colonne di uguale larghezza */
+  grid-template-rows: repeat(2, auto); /* 2 righe */
+  gap: 50px; /* Spaziatura tra le immagini */
+  justify-content: center; /* Centra la griglia orizzontalmente */
+  align-items: center; /* Centra le immagini verticalmente */
+  margin: 20px auto; /* Centra la griglia nella pagina */
+  width: 110%; /* Larghezza della griglia */
+}
+
+.photo-grid img {
+  width: 100%; /* Le immagini occupano tutta la larghezza della cella */
+  height: auto; /* Mantiene le proporzioni */
+  border-radius: 8px; /* Arrotonda leggermente gli angoli */
+  
+}
+
 
 
