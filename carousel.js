@@ -23,3 +23,22 @@ prevButton.addEventListener("click", () => {
     slidesContainer.scrollLeft -= slideWidth;
   }
 });
+
+// Seleziona tutte le immagini nella griglia
+const images = document.querySelectorAll('.photo-grid img');
+const modal = document.getElementById('image-modal');
+const modalImage = document.getElementById('modal-image');
+const closeBtn = document.querySelector('.close-btn');
+
+// Aggiungi un evento di clic a ogni immagine
+images.forEach((image) => {
+  image.addEventListener('click', () => {
+    modal.style.display = 'flex'; // Mostra il contenitore
+    modalImage.src = image.src; // Imposta l'immagine cliccata nel contenitore
+  });
+});
+
+// Aggiungi un evento di clic al pulsante di chiusura
+closeBtn.addEventListener('click', () => {
+  modal.style.display = 'none'; // Nascondi il contenitore
+});
