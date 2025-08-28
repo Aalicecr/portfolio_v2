@@ -165,30 +165,30 @@ nav a {
 }
 
 .slider-wrapper {
-  width: 95vw; /* lascia un margine laterale del 5% */
-  height: 95vh; /* lascia un margine verticale del 5% */
+  margin: 1rem;
   position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: auto; /* centra il carosello */
-  margin-right: 30px;
+  overflow: hidden;
 }
 
 .slides-container {
+  height: 80vh; /* Imposta un'altezza fissa per il carosello */
+  width: 100%;
   display: flex;
-  overflow: hidden; /* Nasconde le immagini fuori dal carosello */
-  width: 100%; /* La larghezza del contenitore */
+  overflow: hidden; /* Nasconde le slide fuori dal carosello */
+  scroll-behavior: smooth;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .slides-container {
-  scrollbar-width: none; /* Firefox */
-  -ms-overflow-style: none; /* Internet Explorer 10+ */
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
 }
 /* WebKit */
-.slides-container::-webkit-scrollbar {
-  width: 0;
-  height: 0;
+.slides-container::-webkit-scrollbar { 
+    width: 0;
+    height: 0;
 }
 
 .slide-arrow {
@@ -220,26 +220,15 @@ nav a {
 }
 
 #slide-arrow-next {
-  right: 30px; /* Posizione del bottone */
-  padding: 0.25rem 0.3rem; /* Modifica il padding interno per spostare la freccia */
-  border-radius: 2rem 0 0 2rem; /* Arrotondamento identico alla freccia di sinistra */
-  display: flex;
-  align-items: center; /* Centra verticalmente la freccia */
-  justify-content: flex-end; /* Sposta la freccia verso il bordo destro del bottone */
-  text-align: right; /* Sposta la freccia leggermente verso destra */
+  right: 0;
+  padding-left: 0.75rem;
+  border-radius: 2rem 0 0 2rem;
 }
 
 .slide {
-  flex: 0 0 100%; /* Ogni slide occupa il 100% della larghezza del carosello */
-  height: 300px; /* Altezza delle slide */
-  border-radius: 8px; /* Arrotonda leggermente gli angoli */
-}
-
-.slide img {
-  width: 100%; /* Le immagini occupano tutta la larghezza della slide */
-  height: auto; /* Mantiene le proporzioni delle immagini */
-  object-fit: cover; /* Adatta le immagini per riempire la slide */
-  border-radius: 8px; /* Arrotonda leggermente gli angoli */
+  width: 100%;
+  height: 100%;
+  flex: 1 0 100%;
 }
 
 .empty-section {
@@ -348,7 +337,7 @@ nav a {
   display: grid;
   grid-template-columns: repeat(4, 1fr); /* 4 colonne di uguale larghezza */
   gap: 12px; /* Spaziatura uniforme tra le immagini */
-  width: 92%; /* La griglia occupa il 92% della larghezza meno 20px per i margini */
+  width: 90%; /* La griglia occupa il 90% della larghezza */
   margin: 0 auto; /* Centra la griglia orizzontalmente */
   box-sizing: border-box; /* Include padding e bordi nella dimensione totale */
   transform: translateY(-200px); /* Sposta la griglia verso l'alto di 200px */
@@ -359,10 +348,10 @@ nav a {
   width: 100%; /* Le immagini occupano tutta la larghezza della cella */
   aspect-ratio: 1 / 1; /* Rende le celle quadrate */
   object-fit: cover; /* Adatta le immagini per riempire la cella senza deformarsi */
-  border-radius: 8px; /* Arrotonda leggermente gli angoli */
   cursor: pointer; /* Cambia il cursore in una manina quando si passa sopra */
 }
 
+/* Modale per l'immagine ingrandita */
 .image-modal {
   display: none; /* Nascondi il contenitore per default */
   position: fixed;
