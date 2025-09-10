@@ -447,16 +447,123 @@ nav a {
 
 .black-section {
   position: absolute;
-  top: 475vh; /* deve essere maggiore di .white-section (415vh) */
+  top: 475vh; /* posiziona la pagina nera sotto la sezione video */
   left: 0;
   width: 100vw;
   height: 100vh;
-  background: #000;
+  background: #111;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
   justify-content: flex-start;
-  padding: 60px 80px;
+  align-items: center;
+  padding: 0;
   box-sizing: border-box;
   z-index: 2;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 80vw;
+  margin: 60px auto 0 auto;
+  color: #fff;
+  font-family: 'Montserrat', Arial, sans-serif;
+}
+
+.contact-info {
+  width: 40%;
+}
+
+.contact-info h1 {
+  font-size: 2.8rem;
+  margin-bottom: 24px;
+  letter-spacing: 2px;
+}
+
+.contact-info p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin-bottom: 24px;
+}
+
+.contact-social span {
+  margin-right: 18px;
+  font-size: 1.2rem;
+  opacity: 0.7;
+}
+
+.contact-form {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.contact-form h2 {
+  font-size: 1.3rem;
+  margin-bottom: 24px;
+  color: #ccc;
+  letter-spacing: 1px;
+}
+
+.contact-form form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.contact-form input {
+  width: 100%;
+  padding: 14px 18px;
+  background: #444;
+  border: none;
+  color: #eee;
+  font-size: 1rem;
+  border-radius: 4px;
+  outline: none;
+}
+
+.contact-form button {
+  width: 100%;
+  padding: 14px 18px;
+  background: #bbb;
+  color: #222;
+  font-size: 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  letter-spacing: 1px;
+  opacity: 0.8;
+  transition: opacity 0.2s;
+}
+
+.contact-form button:hover {
+  opacity: 1;
+}
+
+.contact-footer {
+  width: 80vw;
+  margin: 60px auto 0 auto;
+  color: #fff;
+  font-family: 'Montserrat', Arial, sans-serif;
+  text-align: left;
+}
+
+.footer-name {
+  font-size: 1.5rem;
+  margin-bottom: 12px;
+  letter-spacing: 1px;
+}
+
+.footer-nav {
+  font-size: 1rem;
+  margin-bottom: 12px;
+  opacity: 0.7;
+}
+
+.footer-copy {
+  font-size: 0.9rem;
+  opacity: 0.5;
 }
