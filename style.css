@@ -476,13 +476,15 @@ nav a {
 }
 
 .contact-info h1 {
-  font-size: 2.8rem;
+  font-size: 3rem;
+  font-weight: bold;
   margin-bottom: 24px;
   letter-spacing: 2px;
 }
 
 .contact-info p {
   font-size: 1.1rem;
+  font-weight: 500;
   line-height: 1.7;
   margin-bottom: 24px;
 }
@@ -502,8 +504,9 @@ nav a {
 
 .contact-form h2 {
   font-size: 1.3rem;
+  font-weight: bold;
   margin-bottom: 24px;
-  color: #ccc;
+  color: #ffffff;
   letter-spacing: 1px;
 }
 
@@ -538,9 +541,9 @@ nav a {
 }
 
 .contact-form button {
-  width: 100%;
+  width: 106%;
   padding: 14px 18px;
-  background: #bbb;
+  background: #ffffff;
   color: #222;
   font-size: 1rem;
   border: none;
@@ -565,6 +568,7 @@ nav a {
 
 .footer-name {
   font-size: 1.5rem;
+  font-weight: bold;
   margin-bottom: 12px;
   letter-spacing: 1px;
 }
