@@ -444,3 +444,19 @@ nav a {
   border-radius: 12px;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
 }
+
+.black-section {
+  position: absolute;
+  top: 475vh; /* deve essere maggiore di .white-section (415vh) */
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: #000;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 60px 80px;
+  box-sizing: border-box;
+  z-index: 2;
+}
