@@ -406,7 +406,7 @@ nav a {
   top: 415vh; /* deve essere maggiore di .new-section (315vh) */
   left: 0;
   width: 100vw;
-  height: 100vh;
+  height: 60vh;
   background: #fff;
   display: flex;
   flex-direction: column;
@@ -422,22 +422,25 @@ nav a {
 
 .video-grid {
   display: flex;
-  flex-direction: column;
+  flex-direction: row; /* cambia da column a row */
   gap: 40px;
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
+  justify-content: center;
+  align-items: flex-start;
 }
 
 .video-item {
-  width: 100%;
+  width: 50%; /* ogni video occupa metà della larghezza */
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .video-item video {
-  max-width: 800px;
+  max-width: 700px;
   width: 100%;
+  min-width: 300px;
   border-radius: 12px;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
 }
