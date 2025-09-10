@@ -583,3 +583,13 @@ nav a {
   font-size: 0.9rem;
   opacity: 0.5;
 }
+
+.photo-title {
+  position: absolute;
+  top: 40px;
+  left: 71px;
+  font-size: 40px;
+  font-weight: normal;
+  color: white;
+  letter-spacing: 2px;
+}
