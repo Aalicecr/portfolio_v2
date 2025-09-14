@@ -1,3 +1,75 @@
+@media (max-width: 1024px) {
+  .side-text {
+    width: 60vw;
+    max-width: 400px;
+    min-width: 220px;
+    padding: 30px 30px 30px 30px;
+    right: 0;
+  }
+  .hamburger {
+    top: 25px;
+    right: 25px;
+  }
+}
+.hamburger {
+  display: none;
+}
+@media (max-width: 900px) {
+  .hamburger {
+    display: flex;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 201;
+  }
+  .side-text {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 70vw;
+    max-width: 320px;
+    min-width: 220px;
+    background: #111;
+    flex-direction: column;
+    gap: 0;
+    align-items: flex-start;
+    padding: 80px 30px 30px 30px;
+    box-shadow: -2px 0 12px rgba(0,0,0,0.2);
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+    z-index: 150;
+    overflow-y: auto;
+  }
+  .side-text.open {
+    transform: translateX(0);
+  }
+  .side-text a {
+    display: block;
+    margin: 18px 0;
+    font-size: 18px;
+    letter-spacing: 2px;
+    color: #fff;
+    text-align: left;
+  }
+  header {
+    padding-right: 60px;
+  }
+}
+
+@media (max-width: 900px) and (min-width: 700px) {
+  /* iPad verticale */
+  .side-text {
+    width: 50vw;
+    max-width: 400px;
+    min-width: 220px;
+    padding: 80px 40px 30px 40px;
+  }
+  .hamburger {
+    top: 30px;
+    right: 30px;
+  }
+}
 Prima schermata * {
   margin: 0;
   padding: 0;
@@ -27,9 +99,9 @@ header {
   position: relative;
   top: 0;
   left: 0;
-  width: 100%;
   padding: 20px 50px;
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
   z-index: 10;
@@ -37,8 +109,7 @@ header {
 
 .logo {
   font-weight: normal;
-  position: absolute;
-  top: 30px; /* Posiziona il logo sulla stessa linea del menu */
+  position: static;
   font-size: 14px;
   letter-spacing: 2px;
   z-index: 100;
@@ -50,6 +121,74 @@ nav a {
   margin-left: 30px;
   font-size: 14px;
   letter-spacing: 1px;
+}
+/* Hamburger menu base style */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 200;
+}
+.hamburger span {
+  display: block;
+  width: 28px;
+  height: 4px;
+  margin: 5px 0;
+  background: #fff;
+  border-radius: 2px;
+  transition: 0.3s;
+}
+
+@media (max-width: 1366px) {
+  .new-section {
+    height: 125vh;
+  }
+}
+
+@media (max-width: 900px) {
+  .side-text {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 70vw;
+    max-width: 320px;
+    background: #111;
+    flex-direction: column;
+    gap: 0;
+    align-items: flex-start;
+    padding: 80px 30px 30px 30px;
+    box-shadow: -2px 0 12px rgba(0,0,0,0.2);
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+    z-index: 150;
+  }
+  .side-text.open {
+    transform: translateX(0);
+  }
+  .side-text a {
+    display: block;
+    margin: 18px 0;
+    font-size: 18px;
+    letter-spacing: 2px;
+    color: #fff;
+    text-align: left;
+  }
+  .hamburger {
+    display: flex;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+  header {
+    padding-right: 60px;
+  }
 }
 
 .container {
@@ -63,10 +202,9 @@ nav a {
 }
 
 .side-text {
-  position: absolute;
-  top: 30px;
-  right: 150px;
+  position: static;
   display: flex;
+  flex-direction: row;
   gap: 30px;
   font-size: 14px;
   letter-spacing: 1px;
@@ -74,6 +212,20 @@ nav a {
   color: white;
   max-width: calc(100% - 100px);
   z-index: 100;
+}
+@media (max-width: 1024px) {
+  header {
+    padding: 18px 20px;
+    flex-direction: row;
+    align-items: center;
+  }
+  .logo {
+    font-size: 13px;
+  }
+  .side-text {
+    font-size: 13px;
+    max-width: 70vw;
+  }
 }
 
 .side-text a {
@@ -592,4 +744,278 @@ nav a {
   font-weight: normal;
   color: white;
   letter-spacing: 2px;
+}
+/* ------------------- RESPONSIVE DESIGN ------------------- */
+/* Immagini e video responsive */
+.responsive-img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+.responsive-video {
+  max-width: 100vw;
+  height: auto;
+  border-radius: 12px;
+}
+
+@media (max-width: 1024px) {
+  .container {
+    padding: 0 15px;
+  }
+  .welcome {
+    font-size: 40px;
+  }
+  .just-creativity,
+  .welcome-nel,
+  .mio-portfolio {
+    font-size: 45px;
+    left: 0;
+  }
+  .name {
+    font-size: 30px;
+    right: 10px;
+    bottom: 20px;
+  }
+  .side-text {
+    right: 20px;
+    font-size: 12px;
+  }
+  header {
+    padding: 10px 15px;
+  }
+  .logo {
+    top: 15px;
+    font-size: 12px;
+  }
+  .bottom-title {
+    font-size: 28px;
+    left: 15px;
+  }
+  .slider-wrapper,
+  .slides-container {
+    width: 100vw;
+    height: 50vh;
+  }
+  .slide {
+    width: 100vw;
+    height: 50vh;
+  }
+  .slider-wrapper {
+    margin-right: -15px;
+}
+  .empty-section {
+    height: auto;
+    min-height: 100vh;
+  }
+  .hello-text,
+  .about-me-text {
+    font-size: 40px;
+  }
+  .image-container {
+    flex-direction: column;
+    gap: 10px;
+    top: 100px;
+    left: 10px;
+  }
+  .top-left-image {
+    width: 180px;
+  }
+  .about-me-description {
+    font-size: 14px;
+    max-width: 90vw;
+    padding: 10px 5px;
+    margin-left: 0;
+  }
+  .new-section {
+    height: auto;
+    min-height: 80vh;
+    padding: 70px 0;
+  }
+  .photo-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+    width: 98vw;
+    transform: none;
+  }
+  .photo-title {
+    font-size: 28px;
+    left: 15px;
+    top: 10px;
+  }
+  .white-section {
+    padding: 20px 10px;
+    font-size: 1.1rem;
+    height: auto;
+    min-height: 40vh;
+  }
+  .video-grid {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .video-item {
+    width: 100%;
+  }
+  .video-item video {
+    max-width: 66vw;
+    min-width: 180px;
+  }
+  .black-section {
+    height: auto;
+    min-height: 80vh;
+    padding: 0;
+  }
+  .contact-container {
+    flex-direction: column;
+    width: 98vw;
+    margin: 30px auto 0 auto;
+  }
+  .contact-info,
+  .contact-form {
+    align-items: flex-start;
+  }
+  .contact-info h1 {
+    font-size: 2rem;
+  }
+  .contact-footer {
+    width: 98vw;
+    margin: 30px auto 0 auto;
+  }
+  .footer-name {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .container {
+    padding: 0 5px;
+  }
+  .welcome {
+    font-size: 22px;
+    padding: 5px 5px;
+  }
+  .just-creativity,
+  .welcome-nel,
+  .mio-portfolio {
+    font-size: 24px;
+    left: 0;
+  }
+  .name {
+    font-size: 16px;
+    right: 5px;
+    bottom: 10px;
+  }
+  .side-text {
+    right: 5px;
+    gap: 5px;
+    font-size: 9px;
+    top: 10px;
+  }
+  header {
+    padding: 5px 5px;
+  }
+  .logo {
+    top: 5px;
+    font-size: 8px;
+  }
+  .bottom-title {
+    font-size: 16px;
+    left: 5px;
+  }
+  .slider-wrapper,
+  .slides-container {
+    width: 100vw;
+    height: 30vh;
+  }
+  .slide {
+    width: 100vw;
+    height: 30vh;
+  }
+  #slide-arrow-next {
+    right: 2px;
+  }
+  .empty-section {
+    height: auto;
+    min-height: 80vh;
+  }
+  .hello-text,
+  .about-me-text {
+    font-size: 18px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    top: 5px;
+  }
+  .image-container {
+    flex-direction: column;
+    gap: 5px;
+    top: 40px;
+    left: 2px;
+  }
+  .top-left-image {
+    width: 90px;
+  }
+  .about-me-description {
+    font-size: 10px;
+    max-width: 98vw;
+    padding: 5px 2px;
+    margin-left: 0;
+  }
+  .new-section {
+    height: auto;
+    min-height: 40vh;
+    padding: 5px 0;
+  }
+  .photo-grid {
+    grid-template-columns: 1fr;
+    gap: 4px;
+    width: 99vw;
+    transform: none;
+  }
+  .photo-title {
+    font-size: 14px;
+    left: 5px;
+    top: 2px;
+  }
+  .white-section {
+    padding: 10px 2px;
+    font-size: 0.8rem;
+    height: auto;
+    min-height: 20vh;
+  }
+  .video-grid {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .video-item {
+    width: 100%;
+  }
+  .video-item video {
+    max-width: 66vw;
+    min-width: 90px;
+  }
+  .black-section {
+    height: auto;
+    min-height: 40vh;
+    padding: 0;
+  }
+  .contact-container {
+    flex-direction: column;
+    width: 99vw;
+    margin: 10px auto 0 auto;
+  }
+  .contact-info,
+  .contact-form {
+    width: 100%;
+    align-items: flex-start;
+  }
+  .contact-info h1 {
+    font-size: 1.1rem;
+  }
+  .contact-footer {
+    width: 99vw;
+    margin: 10px auto 0 auto;
+  }
+  .footer-name {
+    font-size: 0.8rem;
+  }
 }

@@ -9,14 +9,19 @@
   <body>
      <canvas id="bg"></canvas>
     <header>
-      <div class="logo">AP | GRAPHIC DESIGNER</div>
-      <nav class="side-text">
-        <a href="#">I MIEI LAVORI</a>
-        <a href="#">ABOUT ME</a>
-        <a href="#">FOTO</a>
-        <a href="#">VIDEO</a>
-        <a href="#">CONTATTI</a>
-      </nav>
+        <div class="logo">AP | GRAPHIC DESIGNER</div>
+        <button class="hamburger" id="hamburger-menu" aria-label="Apri menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <nav class="side-text" id="main-nav">
+          <a href="#lavori" class="nav-link">I MIEI LAVORI</a>
+          <a href="#about" class="nav-link">ABOUT ME</a>
+          <a href="#foto" class="nav-link">FOTO</a>
+          <a href="#video" class="nav-link">VIDEO</a>
+          <a href="#contatti" class="nav-link">CONTATTI</a>
+        </nav>
     </header>
 
     <div class="container">
@@ -29,7 +34,7 @@
 
       <div class="name">ALICE<br />PEDRONI</div>
     </div>
-    <div class="bottom-section">
+    <div class="bottom-section" id="lavori">
       <div class="bottom-title">I MIEI LAVORI</div>
       <div class="carousel-area">
         <section class="slider-wrapper">
@@ -112,89 +117,88 @@
     </div>
 
     <div class="empty-section">
-      <div class="hello-text">HELLO</div>
-      <div class="about-me-text">ABOUT ME</div>
-      <div class="image-container">
-        <img
-          src="./media_V2/me.jpg"
-          alt="Descrizione immagine"
-          class="top-left-image"
-        />
-
-        <div class="about-me-description">
-          SONO ALICE, HO 23 ANNI E VENGO DA CREMONA.
-          <p>
-            MI SONO LAUREATA IN GRAPHIC DESIGN E ORA <br />
-            FREQUENTO IL BIENNIO DI DIGITAL DESIGN.
-          </p>
-          <p>
-            AMO CATTURARE MOMENTI CON LA FOTOGRAFIA <br />
-            E DAR LORO NUOVA VITA ATTRAVERSO L’EDITING. <br />
-            IL BIANCO E NERO E IL MINIMALISMO SONO LA <br />
-            MIA COMFORT ZONE, MA MI ATTRAGGONO ANCHE <br />
-            I CONTRASTI FORTI, SOPRATTUTTO QUELLI NEON, <br />
-            CON BLU E VIOLA PROTAGONISTI.
-          </p>
-          <p>
-            PER ME LA GRAFICA È UN LINGUAGGIO UNIVERSALE <br />
-            UN MODO PER COMUNICARE A TUTTI, SUPERANDO <br />
-            BARRIERE E RENDENDO I MESSAGGI ACCESSIBILI <br />
-            ANCHE A CHI NON PARLA LA STESSA LINGUA.
-          </p>
-          <p>
-            UN PICCOLO DETTAGLIO SU DI ME: MI PIACE <br />
-            MESCOLARE STILI E IDEE. NEI PROGETTI LUNGHI <br />
-            TENDO A SPERIMENTARE MOLTO, PERCHÉ CREDO <br />
-            CHE PROPRIO DALLE CONTAMINAZIONI POSSANO <br />
-            NASCERE SPUNTI ORIGINALI.
-          </p>
-          <p>
-            OGGI STO ESPLORANDO IL MONDO DEL WEB DESIGN, <br />
-            UN TERRITORIO CREATIVO CHE MI SPINGE A <br />
-            CRESCERE, SPERIMENTARE E METTERMI IN GIOCO.
-          </p>
+        <div class="hello-text" id="about">HELLO</div>
+        <div class="about-me-text">ABOUT ME</div>
+        <div class="image-container">
+          <img
+            src="./media_V2/me.jpg"
+            alt="Alice Pedroni ritratto"
+            class="top-left-image responsive-img"
+          />
+          <div class="about-me-description">
+            <span class="about-intro">SONO ALICE, HO 23 ANNI E VENGO DA CREMONA.</span>
+            <p>
+              MI SONO LAUREATA IN GRAPHIC DESIGN E ORA <br />
+              FREQUENTO IL BIENNIO DI DIGITAL DESIGN.
+            </p>
+            <p>
+              AMO CATTURARE MOMENTI CON LA FOTOGRAFIA <br />
+              E DAR LORO NUOVA VITA ATTRAVERSO L’EDITING. <br />
+              IL BIANCO E NERO E IL MINIMALISMO SONO LA <br />
+              MIA COMFORT ZONE, MA MI ATTRAGGONO ANCHE <br />
+              I CONTRASTI FORTI, SOPRATTUTTO QUELLI NEON, <br />
+              CON BLU E VIOLA PROTAGONISTI.
+            </p>
+            <p>
+              PER ME LA GRAFICA È UN LINGUAGGIO UNIVERSALE <br />
+              UN MODO PER COMUNICARE A TUTTI, SUPERANDO <br />
+              BARRIERE E RENDENDO I MESSAGGI ACCESSIBILI <br />
+              ANCHE A CHI NON PARLA LA STESSA LINGUA.
+            </p>
+            <p>
+              UN PICCOLO DETTAGLIO SU DI ME: MI PIACE <br />
+              MESCOLARE STILI E IDEE. NEI PROGETTI LUNGHI <br />
+              TENDO A SPERIMENTARE MOLTO, PERCHÉ CREDO <br />
+              CHE PROPRIO DALLE CONTAMINAZIONI POSSANO <br />
+              NASCERE SPUNTI ORIGINALI.
+            </p>
+            <p>
+              OGGI STO ESPLORANDO IL MONDO DEL WEB DESIGN, <br />
+              UN TERRITORIO CREATIVO CHE MI SPINGE A <br />
+              CRESCERE, SPERIMENTARE E METTERMI IN GIOCO.
+            </p>
+          </div>
         </div>
-      </div>
     </div>
 
     <div class="new-section">
-      <div class="new-section-content">
-        <div class="photo-title">FOTO</div>
-        <div class="photo-grid">
-          <img src="./media_V2/fiume.jpg" alt="Foto 1" />
-          <img src="./media_V2/funivie.jpg" alt="Foto 2" />
-          <img src="./media_V2/roma.jpeg" alt="Foto 3" />
-          <img src="./media_V2/torino.jpeg" alt="Foto 4" />
-          <img src="./media_V2/pineta.jpeg" alt="Foto 5" />
-          <img src="./media_V2/montagna.jpg" alt="Foto 6" />
-          <img src="./media_V2/routa.jpeg" alt="Foto 8" />
-          <img src="./media_V2/macchina.jpeg" alt="Foto 9" />
+        <div class="new-section-content">
+          <div class="photo-title" id="foto">FOTO</div>
+          <div class="photo-grid">
+            <img src="./media_V2/fiume.jpg" alt="Fiume" class="responsive-img" />
+            <img src="./media_V2/funivie.jpg" alt="Funivie" class="responsive-img" />
+            <img src="./media_V2/roma.jpeg" alt="Roma" class="responsive-img" />
+            <img src="./media_V2/torino.jpeg" alt="Torino" class="responsive-img" />
+            <img src="./media_V2/pineta.jpeg" alt="Pineta" class="responsive-img" />
+            <img src="./media_V2/montagna.jpg" alt="Montagna" class="responsive-img" />
+            <img src="./media_V2/routa.jpeg" alt="Ruota" class="responsive-img" />
+            <img src="./media_V2/macchina.jpeg" alt="Macchina" class="responsive-img" />
+          </div>
         </div>
-      </div>
     </div>
 
     <!-- PAGINA BIANCA SOTTO LA GRIGLIA IMMAGINI -->
     <div class="white-section">
-      <div class="video-grid">
-        <div class="video-item">
-          <video controls width="100%">
-            <source
-              src="./media_V2/redpandacompress_CORTO09_MASTER01.mp4"
-              type="video/mp4"
-            />
-            Il tuo browser non supporta il video.
-          </video>
+        <div class="video-grid" id="video">
+          <div class="video-item">
+            <video controls width="100%" class="responsive-video">
+              <source
+                src="./media_V2/redpandacompress_CORTO09_MASTER01.mp4"
+                type="video/mp4"
+              />
+              Il tuo browser non supporta il video.
+            </video>
+          </div>
+          <div class="video-item">
+            <video controls width="100%" class="responsive-video">
+              <source
+                src="./media_V2/redpandacompress_DSC_0165.mp4"
+                type="video/mp4"
+              />
+              Il tuo browser non supporta il video.
+            </video>
+          </div>
         </div>
-        <div class="video-item">
-          <video controls width="100%">
-            <source
-              src="./media_V2/redpandacompress_DSC_0165.mp4"
-              type="video/mp4"
-            />
-            Il tuo browser non supporta il video.
-          </video>
-        </div>
-      </div>
     </div>
 
     <!-- Contenitore per l'immagine ingrandita -->
@@ -204,7 +208,7 @@
     </div>
 
     <div class="black-section">
-      <div class="contact-container">
+    <div class="contact-container" id="contatti">
         <div class="contact-info">
           <h1>CONTATTI</h1>
           <p>Telefono: <a href="tel:+393343184786" style="color: #fff; text-decoration: underline">+39 334 3184786</a></p>
@@ -258,5 +262,22 @@
     <script src="js/carousel.js"></script>
     <script src="js/send-email.js"></script>
     <script src="js/background.js"></script>
+      <script>
+        // Hamburger menu toggle
+        const hamburger = document.getElementById('hamburger-menu');
+        const nav = document.getElementById('main-nav');
+        hamburger.addEventListener('click', function() {
+          nav.classList.toggle('open');
+          const expanded = hamburger.getAttribute('aria-expanded') === 'true';
+          hamburger.setAttribute('aria-expanded', !expanded);
+        });
+        // Chiudi menu al click su link
+        document.querySelectorAll('.side-text .nav-link').forEach(link => {
+          link.addEventListener('click', () => {
+            nav.classList.remove('open');
+            hamburger.setAttribute('aria-expanded', 'false');
+          });
+        });
+      </script>
   </body>
 </html>
