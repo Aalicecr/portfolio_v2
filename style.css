@@ -153,7 +153,7 @@ nav a {
   font-weight: normal;
   color: white;
   letter-spacing: 2px;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   z-index: 2;
 }
 
@@ -228,7 +228,7 @@ nav a {
 
 #slide-arrow-next {
   right: 30px; /* Posizione del bottone */
-  padding: 0.25rem 0.3rem; /* Modifica il padding interno per spostare la freccia */
+  padding: 0 0.3rem 0.5rem 0.3rem; /* Modifica il padding interno per spostare la freccia */
   border-radius: 2rem 0 0 2rem; /* Arrotondamento identico alla freccia di sinistra */
   display: flex;
   align-items: center; /* Centra verticalmente la freccia */
