@@ -47,3 +47,12 @@ images.forEach((image) => {
 closeBtn.addEventListener("click", () => {
   modal.style.display = "none"; // Nascondi il contenitore
 });
+
+
+// Apri/chiudi menu hamburger
+const hamburger = document.querySelector('.hamburger');
+const mobileMenu = document.querySelector('.side-text');
+
+hamburger.addEventListener('click', () => {
+  mobileMenu.classList.toggle('open');
+});
