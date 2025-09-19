@@ -706,6 +706,7 @@ nav a {
   border-radius: 4px;
   outline: none;
   resize: vertical;
+  max-height: 300px;
 }
 
 .contact-form button {
