@@ -566,10 +566,20 @@ nav a {
   justify-content: flex-start;
   padding: 60px 80px;
   color: #222;
-  font-family: sans-serif;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   font-size: 2rem;
   box-sizing: border-box;
   z-index: 2;
+}
+
+.video-title {
+  position: absolute;
+  top: 40px;
+  left: 71px;
+  font-size: 40px;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+  letter-spacing: 2px;
 }
 
 .video-grid {
@@ -580,6 +590,9 @@ nav a {
   margin: 0 auto;
   justify-content: center;
   align-items: flex-start;
+  margin-top: 48px;
+  margin-bottom: 70px;
+  
 }
 
 .video-item {
@@ -597,9 +610,10 @@ nav a {
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
 }
 
+
 .black-section {
   position: absolute;
-  top: 475vh; /* posiziona la pagina nera sotto la sezione video */
+  top: 480vh; /* posiziona la pagina nera sotto la sezione video */
   left: 0;
   width: 100vw;
   height: 100vh;
