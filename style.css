@@ -496,13 +496,14 @@ nav a {
   top: 315vh; /* Posiziona la nuova sezione sotto la terza pagina */
   left: 0;
   width: 100vw; /* Larghezza uguale alla finestra */
-  height: 150vh; /* Aumenta l'altezza della pagina */
+  height: 140vh; /* Aumenta l'altezza della pagina */
   background: #000000; /* Sfondo nero */
   z-index: 1; /* Assicura che la sezione sia visibile */
   display: flex; /* Usa Flexbox per centrare il contenuto */
   align-items: center; /* Centra verticalmente la griglia */
   justify-content: center; /* Centra orizzontalmente la griglia */
   overflow: hidden; /* Impedisce che il contenuto esca dalla sezione */
+  
 }
 
 .photo-grid {
@@ -513,7 +514,7 @@ nav a {
   margin: 0 auto; /* Centra la griglia orizzontalmente */
   box-sizing: border-box; /* Include padding e bordi nella dimensione totale */
   transform: translateY(-200px); /* Sposta la griglia verso l'alto di 200px */
-
+  margin-top: 90px;
 }
 
 .photo-grid img {
@@ -558,7 +559,7 @@ nav a {
   top: 415vh; /* deve essere maggiore di .new-section (315vh) */
   left: 0;
   width: 100vw;
-  height: 60vh;
+  height: 85vh;
   background: #fff;
   display: flex;
   flex-direction: column;
@@ -580,6 +581,7 @@ nav a {
   font-weight: bold;
   color: rgb(0, 0, 0);
   letter-spacing: 2px;
+  margin-left: 10px;
 }
 
 .video-grid {
