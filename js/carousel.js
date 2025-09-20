@@ -56,3 +56,18 @@ const mobileMenu = document.querySelector('.side-text');
 hamburger.addEventListener('click', () => {
   mobileMenu.classList.toggle('open');
 });
+
+// ...existing code...
+
+document.querySelectorAll('.photo-grid img').forEach(img => {
+  img.onclick = function() {
+    document.getElementById('modalImg').src = this.src;
+    document.getElementById('imageModal').classList.add('active');
+  };
+});
+
+document.getElementById('closeModal').onclick = function() {
+  document.getElementById('imageModal').classList.remove('active');
+};
+
+// ...existing code...
