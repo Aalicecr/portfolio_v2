@@ -178,8 +178,6 @@
         </div>
     </div>
 
-    
-
     <!-- PAGINA BIANCA SOTTO LA GRIGLIA IMMAGINI -->
     <div class="white-section">
       <div class="video-title" style="font-size:40px; color:#111; font-weight:normal; letter-spacing:2px; margin-bottom:30px; margin-left:10px;">VIDEO</div>
@@ -206,9 +204,10 @@
     </div>
 
     <!-- Contenitore per l'immagine ingrandita -->
-    <div id="image-modal" class="image-modal">
-      <span class="close-btn">&times;</span>
-      <img id="modal-image" src="" alt="Immagine ingrandita" />
+    <div class="image-modal" id="imageModal">
+      <span class="close-btn desktop" id="closeModalDesktop">&times;</span>
+      <span class="close-btn mobile" id="closeModalMobile">&times;</span>
+      <img src="" alt="Immagine ingrandita" id="modalImg">
     </div>
 
     <div class="black-section">
@@ -282,14 +281,6 @@
             hamburger.setAttribute('aria-expanded', 'false');
           });
         });
-
-
-        <div class="image-modal" id="imageModal">
-  <span class="close-btn desktop" id="closeModalDesktop">&times;</span>
-  <span class="close-btn mobile" id="closeModalMobile">&times;</span>
-  <img src="" alt="Immagine ingrandita" id="modalImg">
-</div>
-       
       </script>
   </body>
 </html>
